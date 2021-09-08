@@ -454,7 +454,7 @@ def update_figure(daytype):
       fig = px.line(df['timestamp'], x= df.iloc[:, 0], y= df.iloc[:, 2])
     elif daytype == 'light':
       fig = px.line(df['timestamp'], x= df.iloc[:, 0], y= df.iloc[:, 3])
-    generate_table(df, len(df))
+#     generate_table(df, len(df))
     return fig
   
 if __name__ == '__main__':
