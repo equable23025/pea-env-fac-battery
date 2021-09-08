@@ -30,8 +30,8 @@ def download_data(begin_year, begin_month, begin_day, begin_hr, begin_min, end_y
   end = datetime(year=end_year, month=end_month, day=end_day, hour=end_hr, minute=end_min, second=0)
   endTimestamp = datetime.timestamp(end)
 
-  ref = db.reference('test')
-  # ref = db.reference('project')
+#   ref = db.reference('test')
+  ref = db.reference('project')
   # print(ref.get())
   snapshot = ref.order_by_child('timestamp').start_at(beginTimestamp).end_at(endTimestamp).get()
   # print(snapshot)
