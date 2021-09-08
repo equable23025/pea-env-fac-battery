@@ -54,8 +54,7 @@ server = app.server
 #app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
 # สร้างข้อมูล
-df = download_data(int(TODAY.strftime("%Y")), int(TODAY.strftime("%m"))-1,  int(TODAY.strftime("%d")), int(TODAY.strftime("%H")), int(TODAY.strftime("%M")),int(TODAY.strftime("%Y"))
-, int(TODAY.strftime("%m")),  int(TODAY.strftime("%d")), int(TODAY.strftime("%H")), int(TODAY.strftime("%M")))
+df = download_data(2021, 9,  6, 0, 0, int(TODAY.strftime("%Y")), int(TODAY.strftime("%m")),  int(TODAY.strftime("%d")), int(TODAY.strftime("%H")), int(TODAY.strftime("%M")))
 
 
 # create graph component
