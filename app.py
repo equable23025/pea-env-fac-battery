@@ -38,7 +38,7 @@ def download_data(begin_year, begin_month, begin_day, begin_hr, begin_min, end_y
   dict1 = {'timestamp':[],'temp':[],'humid':[],'light':[]}
   # dict1 = {'timestamp':[],'temp':[],'humid':[]}
   for key in snapshot:
-    dict1['timestamp'].append(snapshot[key]['timestamp'])
+    dict1['timestamp'].append(datetime.fromtimestamp(snapshot[key]['timestamp']))
     dict1['temp'].append(snapshot[key]['temp'])
     dict1['humid'].append(snapshot[key]['humid'])
     dict1['light'].append(snapshot[key]['light'])
